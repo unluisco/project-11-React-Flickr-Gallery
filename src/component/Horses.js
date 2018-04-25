@@ -1,12 +1,16 @@
 import React from 'react';
+import Nav from './Nav.js';
 import Results from './Results.js';
 
 const Horses = (props) => {
 
 	return (
-		<Results
-			query={ "horses" }
-			api={ props.api } />
+		<div className="container">
+			<Nav />
+			<Results
+				query={ "horses" }
+				api={ props.api } />
+		</div>
 	);
 }
 
