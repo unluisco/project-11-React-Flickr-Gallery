@@ -8,7 +8,7 @@ import apiKey from './config.js';
 import Search from './component/Search.js';
 import Cats from './component/Cats.js';
 import Dogs from './component/Dogs.js';
-import Computers from './component/Computers.js';
+import Horses from './component/Horses.js';
 
 const App = () => {
 
@@ -22,7 +22,7 @@ const App = () => {
 
 					<Route path="/dogs" render={ () => (<Dogs api={ apiKey } />) } />
 
-					<Route path="/computers" render={ () => (<Computers api={ apiKey } />) } />
+					<Route path="/horses" render={ () => (<Horses api={ apiKey } />) } />
 				</Switch>
 			</div>
 		</BrowserRouter>

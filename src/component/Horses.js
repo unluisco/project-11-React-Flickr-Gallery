@@ -1,13 +1,13 @@
 import React from 'react';
 import Results from './Results.js';
 
-const Computers = (props) => {
+const Horses = (props) => {
 
 	return (
 		<Results
-			query={ "computers" }
+			query={ "horses" }
 			api={ props.api } />
 	);
 }
 
-export default Computers;
+export default Horses;
