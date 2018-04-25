@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import PhotoList from './PhotoList.js';
 
+// container component that takes a keyword and api key as props.
 class Results extends Component {
 
 	constructor() {
@@ -14,6 +15,7 @@ class Results extends Component {
 		}
 	}
 
+	// get data from Flickr API.
 	componentDidMount() {
 		if (this.props.query !== "") {
 			axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${this.props.api}&tags=${this.props.query}&per_page=16&format=json&nojsoncallback=1`)
@@ -36,6 +38,7 @@ class Results extends Component {
 		this.performSearch(newProps.query);
 	}
 
+	// get data from Flickr API.
 	performSearch = (query) => {
 		axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${this.props.api}&tags=${query}&per_page=16&format=json&nojsoncallback=1`)
 

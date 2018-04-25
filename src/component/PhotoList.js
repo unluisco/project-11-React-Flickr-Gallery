@@ -1,6 +1,7 @@
 import React from 'react';
 import Photo from './Photo.js';
 
+// component that display a list with the photos returned from the api call.
 const PhotoList = (props) => {
 	const results = props.photos;
 	const query = props.query;
@@ -11,6 +12,7 @@ const PhotoList = (props) => {
 				key={ photo.id } />
 	);
 
+	// the title of each photo list is displayed dynamically via "props".
 	return (
 		<div className="photo-container">
 			<h2>{ query }</h2>

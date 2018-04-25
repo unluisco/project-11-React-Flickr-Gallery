@@ -3,8 +3,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 
+// get a Flickr API key.
 import apiKey from './config.js';
 
+// have components ready to use.
 import Search from './component/Search.js';
 import Cats from './component/Cats.js';
 import Dogs from './component/Dogs.js';

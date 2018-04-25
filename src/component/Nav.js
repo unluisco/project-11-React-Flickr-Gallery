@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// component that list every route available.
 const Nav = () => {
 
 	return (
