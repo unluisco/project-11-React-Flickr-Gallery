@@ -1,12 +1,14 @@
 import React from 'react';
-import Nav from './Nav.js';
+import Search from './Search.js';
 import Results from './Results.js';
+
+import apiKey from '../config.js';
 
 const Cats = (props) => {
 
 	return (
 		<div className="container">
-			<Nav />
+			<Search api={ apiKey } />
 			<Results
 				query={ "cats" }
 				api={ props.api } />
