@@ -9,6 +9,7 @@ const Cats = (props) => {
 	return (
 		<div className="container">
 			<Search api={ apiKey } />
+
 			<Results
 				query={ "cats" }
 				api={ props.api } />
