@@ -5,6 +5,13 @@ import Results from './Results.js';
 
 export default class Search extends Component {
 
+	constructor(props) {
+		super(props);
+		this.state = {
+			query: props.query
+		};
+	}
+
 	state = { query: '' };
 
 	pass = { input: '' };
